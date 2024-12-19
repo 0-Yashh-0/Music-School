@@ -29,7 +29,7 @@ export default function CardSection() {
         </div>
       </div>
       <div className="mt-10">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
+        <div className="sm:m-2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
             {featuredCourses.map((course: Course) => (
                 <div key={course.id} className="flex justify-center">
                     <BackgroundGradient className="flex flex-col rounded-[22px] bg-white dark:bg-zinc-900 overflow-hidden h-full max-w-sm">

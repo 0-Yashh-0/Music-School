@@ -14,7 +14,7 @@ function HeroSection() {
             MASTER THE ART OF 
         </h1>
         <div className=" w-max">
-        <h1 className="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white text-4xl font-bold md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">EXPRESSING EMOTIONS.</h1>
+        <h1 className="animate-typing whitespace-nowrap border-r-4 border-r-white text-3xl font-bold md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">EXPRESSING EMOTIONS.</h1>
         </div>
         <p className="mt-10 font-normal text-base md:text-lg text-neutral-300 max-w-lg mx-auto">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae adipisci officia quia quisquam facere fuga quaerat nulla, iste sapiente provident totam reiciendis explicabo error quo quis nihil laborum id exercitationem atque consequuntur voluptatum! Quae labore fuga nisi eligendi soluta nihil, cupiditate quia.

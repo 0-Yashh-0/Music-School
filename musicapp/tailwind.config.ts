@@ -1,3 +1,5 @@
+import plugin from 'tailwindcss/plugin';
+
 const {
   default: flattenColorPalette,}
   // eslint-disable-next-line @typescript-eslint/no-require-imports
@@ -55,7 +57,21 @@ export default {
   },
   plugins: [
     addVariablesForColors,
+    plugin(function ({ addUtilities }) {
+      addUtilities({
+        '.scrollbar-hide': {
+          /* Hide scrollbar for Chrome, Safari, and Edge */
+          '-ms-overflow-style': 'none', /* IE and Edge */
+          'scrollbar-width': 'none',   /* Firefox */
+          '&::-webkit-scrollbar': {
+            display: 'none',          /* Chrome, Safari */
+          },
+        },
+      });
+    }),
+
   ],
+  
 } satisfies Config;
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
