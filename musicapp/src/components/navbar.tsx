@@ -29,25 +29,25 @@ function Navbar({ className }: { className?: string }) {
           <ProductItem
               title="Guitar"
               href="https://www.amazon.in/s?k=guitar"
-              src="/guitarPNG.webp"
+              src="/courses/guitar.jpg"
               description="The guitar is an instrument that can whisper or scream, laugh or cry, sing or shout. It's a voice, and in the hands of a master, it can speak volumes."
           />
           <ProductItem
               title="Piano"
               href="https://www.amazon.in/s?k=piano"
-              src="/piano.png"
+              src="/courses/piano.jpg"
               description="The piano, with its 88 keys, is a universe of sound, capable of expressing every human emotion, from the deepest sorrow to the most exuberant joy."
           />
           <ProductItem
               title="Piano"
               href="https://www.amazon.in/s?k=piano"
-              src="/piano.png"
+              src="/courses/piano.jpg"
               description="The piano, with its 88 keys, is a universe of sound, capable of expressing every human emotion, from the deepest sorrow to the most exuberant joy."
           />
           <ProductItem
             title="Guitar"
             href="https://www.amazon.in/s?k=guitar"
-            src="/guitarPNG.webp"
+            src="/courses/guitar.jpg"
             description="The guitar is an instrument that can whisper or scream, laugh or cry, sing or shout. It's a voice, and in the hands of a master, it can speak volumes."
           />
         </div>
