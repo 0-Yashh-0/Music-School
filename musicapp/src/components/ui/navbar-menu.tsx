@@ -28,7 +28,7 @@ export const MenuItem = ({
     <div onMouseEnter={() => setActive(item)} className="relative ">
       <motion.p
         transition={{ duration: 0.3 }}
-        className="cursor-pointer text-black hover:opacity-[0.9] dark:text-white"
+        className="cursor-pointer text-neutral-200 hover:opacity-[0.9] dark:text-neutral-700"
       >
         {item}
       </motion.p>
@@ -43,7 +43,7 @@ export const MenuItem = ({
               <motion.div
                 transition={transition}
                 layoutId="active" // layoutId ensures smooth animation
-                className="bg-white dark:bg-black backdrop-blur-sm rounded-2xl overflow-hidden border border-black/[0.2] dark:border-white/[0.2] shadow-xl"
+                className="bg-black dark:bg-white backdrop-blur-sm rounded-2xl overflow-hidden border text-neutral-200 dark:text-neutral-700 border-white/[0.2] dark:border-black/[0.2] shadow-xl"
               >
                 <motion.div
                   layout // layout ensures smooth animation
@@ -70,7 +70,7 @@ export const Menu = ({
   return (
     <nav
       onMouseLeave={() => setActive(null)} // resets the state
-      className="relative rounded-full border border-transparent dark:bg-black dark:border-white/[0.2] bg-white shadow-input flex justify-evenly px-8 py-6 "
+      className="relative rounded-full dark:bg-black dark:border-black/[0.2] bg-black shadow-input flex justify-evenly px-8 py-6 "
     >
       {children}
     </nav>
@@ -89,19 +89,19 @@ export const ProductItem = ({
   src: string;
 }) => {
   return (
-    <Link href={href} className="flex space-x-2">
+    <Link href={href} className="flex space-x-2 ">
       <Image
         src={src}
-        width={140}
-        height={70}
+        width={120}
+        height={40}
         alt={title}
         className="flex-shrink-0 rounded-md shadow-2xl"
       />
-      <div>
-        <h4 className="text-xl font-bold mb-1 text-black dark:text-white">
+      <div className="hover:text-neutral-700">
+        <h4 className="text-xl font-bold mb-1 text-neutral-200 dark:text-neutral-700 ">
           {title}
         </h4>
-        <p className="text-neutral-700 text-sm max-w-[10rem] dark:text-neutral-300">
+        <p className="text-white-200 text-sm max-w-[10rem] dark:text-neutral-700">
           {description}
         </p>
       </div>
@@ -115,7 +115,7 @@ export const HoveredLink = ({ children, ...rest }: React.PropsWithChildren<LinkP
   return (
     <Link
       {...rest}
-      className="text-neutral-700 dark:text-neutral-200 hover:text-black "
+      className="text-neutral-200 dark:text-neutral-700 hover:text-neutral-700 "
     >
       {children}
     </Link>
