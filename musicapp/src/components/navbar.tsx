@@ -8,7 +8,7 @@ function Navbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
   return (
   <div
-  className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50", className)}>
+  className={cn("fixed top-0 md:top-10 max-md:text-sm inset-x-0 max-w-2xl mx-auto z-50", className)}>
     <Menu setActive={setActive}>
       <Link href={'/'}>
         <MenuItem setActive={setActive} active={active} item="HOME">
@@ -17,15 +17,15 @@ function Navbar({ className }: { className?: string }) {
       <MenuItem setActive={setActive} active={active} item="COURSES">
       <div className="flex flex-col space-y-4 text-sm">
         <HoveredLink href="/all-courses">All Courses</HoveredLink>
-        <HoveredLink href="/basic-mtheory">Basic Music Theory</HoveredLink>
-        <HoveredLink href="/adv-composition">Advance Composition</HoveredLink>
-        <HoveredLink href="/song-writing">Song Writing</HoveredLink>
-        <HoveredLink href="/music-production">Music Production</HoveredLink>
+        <HoveredLink href="/#">Basic Music Theory</HoveredLink>
+        <HoveredLink href="/#">Advance Composition</HoveredLink>
+        <HoveredLink href="/#">Song Writing</HoveredLink>
+        <HoveredLink href="/#">Music Production</HoveredLink>
       </div>
       </MenuItem>
       <MenuItem
-      setActive={setActive} active={active} item="SHOP">
-        <div className="text-sm grid grid-cols-2 gap-10 p-4">
+      setActive={setActive} active={active} item="SHOP" >
+        <div className="max-sm:hidden text-sm grid grid-cols-2 gap-10 p-4">
           <ProductItem
               title="Guitar"
               href="https://www.amazon.in/s?k=guitar"

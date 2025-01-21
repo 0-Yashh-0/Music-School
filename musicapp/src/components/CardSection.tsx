@@ -21,7 +21,7 @@ export default function CardSection() {
     const featuredCourses = courseData.courses.filter(course => course.isFeatured)
 
     return (
-    <div className="py-12 bg-gray-900">
+    <div className="max-sm:px-2 py-12 bg-gray-900">
       <div>
         <div className="text-center">
             <h1 className=" text-teal-600 font-semibold text-2xl">FEATURED COURSES</h1>
@@ -32,7 +32,7 @@ export default function CardSection() {
         <div className="sm:m-2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
             {featuredCourses.map((course: Course) => (
                 <div key={course.id} className="flex justify-center">
-                    <BackgroundGradient className="flex flex-col rounded-[22px] bg-black dark:bg-zinc-900 overflow-hidden h-full max-w-sm">
+                    <BackgroundGradient className="flex flex-col rounded-[22px] bg-black dark:bg-zinc-900 overflow-hidden h-full max-sm:h-min max-w-sm">
                         <div className="mt-3 flex items-center justify-center">
                             <Image src={course.image} alt="music" width={200} height={75} />
                         </div>
